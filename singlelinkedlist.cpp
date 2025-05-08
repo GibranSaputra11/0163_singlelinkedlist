@@ -8,6 +8,14 @@ class Node{
     Node *next;
 };
 
+class SingleLinkdlist {
+    Node *START;
+    public:
+    SingleLinkdlist(){
+        START = NULL;
+    }
+};
+
 int main(){
 
 }

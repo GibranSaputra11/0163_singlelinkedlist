@@ -52,6 +52,18 @@ class SingleLinkdlist {
     bool listEmpty(){ // metod tipe bolean
         return (START == NULL);
     }
+
+    bool Search(int nim, Node **previous, Node **current){ // add metod
+        *previous = START;
+        *current = START;
+
+        while ((*current != NULL) && (nim != (*current)->noMhs)){
+            *previous = *current;
+            *current = (*current)->next;
+        }
+
+        return (*current != NULL);
+    }
 };
 
 int main(){

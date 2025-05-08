@@ -14,7 +14,7 @@ class SingleLinkdlist {
     SingleLinkdlist(){
         START = NULL;
     }
-
+    
     void addNode(){ //method pertama
         int nim;
         cout << "\nMasukan Nomor Mahasiswa: ";
@@ -47,6 +47,10 @@ class SingleLinkdlist {
 
         nodeBaru->next = current;
         previous->next = nodeBaru;
+    }
+
+    bool listEmpty(){ // metod tipe bolean
+        return (START == NULL);
     }
 };
 

@@ -80,7 +80,7 @@ public:
     bool delNode(int nim)
     {
         Node *current, *previous;
-        if (Search(nim, &previous, &current))
+        if (!Search(nim, &previous, &current))
             return false;
 
         if (current == START)
@@ -173,7 +173,7 @@ int main()
             cout << endl
                  << "Masukan no mahasiswa yang dicari : ";
             cin >> nim;
-            if (mhs.Search(nim, &previous, &current) == false)
+            if (mhs.delNode(nim)== false)
                 cout << endl
                      << "Data tidak ditemukan" << endl;
             else

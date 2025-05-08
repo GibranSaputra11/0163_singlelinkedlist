@@ -111,6 +111,12 @@ int main(){
         cout << endl
              << "Masukan pilihan (1-5): ";
         cin >> ch;
+        switch (ch){
+            case '1':{
+                mhs.addNode();
+            }
+            break;
+        }
     }   
 
 }
